@@ -35,6 +35,6 @@ pilhaObjeto = AdicionaPilha()
 for i in range(5):
 	pilhaObjeto.dentro(i)
 	print(pilhaObjeto.getSum())
-
+print("\n")
 for i in range(5):
 	print(pilhaObjeto.fora())
