@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Calcular 2 numeros</h1>
+
+
+<form action="{{ url_for('operacao') }}" method="POST">
+<table>
+    <tr>
+        <td>
+            primeiro número:
+        </td>
+        <td><input type="text" name="numero1" value=""></td>
+     </tr>
+    <tr>
+        <td>Segundo numero:</td>
+        <td><input type="text" name="numero2" value=""></td>
+    </tr>
+    <tr>
+        <td>Operação:</td>
+        <td>
+            <select name="operacao">
+                <option value="soma">soma</option>
+                <option value="subtracao">subtação</option>
+                <option value="multiplicacao">Multiplicação</option>
+                <option value="divisao">Divisão</option>
+
+            </select>
+        </td>
+        <tr>
+    <td></td>
+    <td><input type="submit" name="submit"></td>
+    </tr>
+
+</table>
+
+</form>
+
+{% endblock %}
