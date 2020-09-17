@@ -1,13 +1,15 @@
 # -*- coding: utf-8 -*-
 ##################
 #
-# programa versão 0.1
+# programa versão 0.2
 #Nome: lança sorte em apostas
 #descrição: progama que gera numeros aleatorios
 #para jogos de azar
 #Criador Ítalo
 #Data: 02/09/20
-# Correções: arrumar o caracter de espaço especial "\". e verificar o porque da repetição do 60
+# Data de atualização: 17/09/20
+# Correções:  Verificar uma função que filtre os valores alfa-numericos em na variavel c
+#. e verificar o porque do envio dos valores > q 60
 ##################
 
 from random import choice, sample, randrange, randint
