@@ -32,8 +32,11 @@ numeros = list(range(1, 11))
 
 # para cada numero em numeros:
 for n1 in numeros:
-    separacao = f"--- Tabuada de {n1} ---"
+    print()
+    separacao = f" --- Tabuada de {n1} ---"
     print(separacao)
+    print("#" * 30)
+    print()
     for n2 in numeros:
         resultado = n1 * n2
         operacao = f"{n1} x {n2} = {resultado}" 
