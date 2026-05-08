@@ -16,24 +16,25 @@ Execução:
    ./hello.py
 
 """
-__version__ = "0.0.1"
+__version__ = "0.1.2"
 __author__ = "Italo Torres"
 __license__ = "Unlicense"
 import os
 # Dunder significa "Underline" duplo, no fim e no inicio da variavel
 current_language = os.getenv("LANG", "en_US")[:5]
 # snake case(Todas as letras em minusculo); Pascal case (alguma letra em maiusculo nos textos em menusculo)
-msg = "Hello, World!"
-if current_language  == "pt_BR":
-    msg = "Olá, Mundo"
-elif current_language == "it_IT":
-    msg = "Ciao, Mondo!"
-elif current_language == "es_SP":
-    msg = "Hola, Mundo!"
-elif current_language == "fr_FR":
-    msg = "Bonjour, Monde"
 
-print(msg) # Comentário de final de linha
+
+msg = {
+        "en_US": "Hello, World!",
+        "pt_BR": "Olá, Mundo!",
+        "it_IT": "Ciao, Mondo!",
+        "es_SP": "Hola, Mundo!",
+        "fr_FR": "Bonjour, Monde",
+
+        }
+
+print(msg[current_language]) # Comentário de final de linha
 
 """Comentario
 multi
